@@ -17,7 +17,7 @@ body {
   flex-direction: row;
 }
 .background-container {
-  min-width: 35%;
+  min-width: 420px;
   height: 100vh;
   background: url(halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
@@ -45,4 +45,22 @@ body {
   color: white;
   font-size: 0.8rem;
   text-align: center;
+}
+.right-container {
+  display: flex;
+  flex-direction: column;
+}
+.signup-overview {
+  width: 600px;
+  margin: 7rem 0 0 4rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2;
+}
+.signup-overview > p {
+  margin: 0.5rem;
+}
+.form-container {
+  width: 600px;
+  margin: 4rem 0 0 4rem;
 }

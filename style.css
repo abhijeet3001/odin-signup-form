@@ -1,14 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 @font-face {
   font-family: norse;
   src: url(Norse-Bold.otf);
 }
 :root {
   font-size: 16px;
+  --color: #596D48;
 }
 body {
   margin: 0;
   padding: 0;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  font-family: 'Poppins', system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
@@ -17,7 +19,7 @@ body {
   flex-direction: row;
 }
 .background-container {
-  min-width: 420px;
+  min-width: 500px;
   height: 100vh;
   background: url(halie-west-25xggax4bSA-unsplash.jpg);
   background-size: cover;
@@ -61,6 +63,60 @@ body {
   margin: 0.5rem;
 }
 .form-container {
-  width: 600px;
-  margin: 4rem 0 0 4rem;
+  width: auto;
+  margin-top: 4rem;
+  border-top: solid #E5E7EB 2px;
+  border-bottom: solid #E5E7EB 2px;
+  padding-top: 1rem;
+  padding-left: 4rem;
+}
+.items-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 1rem;
+  border: none;
+  position: relative;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3rem;
+}
+.items-container legend{
+  position: relative;
+  right: 2px;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: rgb(66, 65, 65);
+}
+.form-item > label {
+  text-transform: uppercase;
+  font-size: 0.7rem;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: rgb(75, 73, 73);
+}
+.form-item > input {
+  width: 200px;
+  height: 22px;
+  padding-left: 0.4rem;
+  border: solid black 1px;
+  border-radius: 4px;
+}
+.form-item > input:focus {
+  outline: none;
+  border: solid blue 1px;
+  border-radius: 4px;
+}
+.submit-btn{
+  width: 12rem;
+  height: 2.4rem;
+  margin: 2rem 5rem;
+  background-color: var(--color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: bold;
 }

@@ -6,6 +6,8 @@
 :root {
   font-size: 16px;
   --color: #596D48;
+  --border-color:#E5E7EB;
+  --shadow: rgb(184, 179, 179);
 }
 body {
   margin: 0;
@@ -65,10 +67,11 @@ body {
 .form-container {
   width: auto;
   margin-top: 4rem;
-  border-top: solid #E5E7EB 2px;
+  /* border-top: solid #E5E7EB 1px; */
   border-bottom: solid #E5E7EB 2px;
   padding-top: 1rem;
   padding-left: 4rem;
+  box-shadow: 2px -1px 1px var(--border-color),2px 3px 6px var(--border-color);
 }
 .items-container {
   display: flex;
@@ -95,22 +98,25 @@ body {
   font-size: 0.7rem;
   font-weight: 600;
   letter-spacing: 1px;
-  color: rgb(75, 73, 73);
+  color: rgb(61, 60, 60);
 }
 .form-item > input {
   width: 200px;
   height: 22px;
-  padding-left: 0.4rem;
-  border: solid black 1px;
+  padding-left: 0.5rem;
+  border: solid var(--border-color) 1px;
   border-radius: 4px;
+  font-size: 13px;
 }
 .form-item > input:focus {
   outline: none;
   border: solid blue 1px;
   border-radius: 4px;
+  box-shadow: 2px 2px 4px var(--shadow) ;
+
 }
 .submit-btn{
-  width: 12rem;
+  width: 11rem;
   height: 2.4rem;
   margin: 2rem 5rem;
   background-color: var(--color);
@@ -119,4 +125,6 @@ body {
   border-radius: 6px;
   font-size: 14px;
   font-weight: bold;
+  box-shadow: 3px 3px 4px var(--shadow) ;
+
 }

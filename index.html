@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
+    <script src="script.js" defer></script>
     <div class="main-container">
       <div class="background-container">
         <div class="logo-container">
@@ -20,7 +21,7 @@
         <div class="signup-overview">
           <p>
             This is not a real online service! You know you need something like
-                        this in your life to help you realize your deepest dreams.
+                                    this in your life to help you realize your deepest dreams.
           </p>
           <p>Sign up
             <em>now</em>
@@ -48,15 +49,18 @@
               </div>
               <div class="form-item">
                 <label for="password">Password</label>
-                <input type="password" id="password" minlength="8"/>
+                <input type="password" id="password" name="pass" minlength="8"/>
               </div>
               <div class="form-item">
                 <label for="confirm_password">Confirm Password</label>
-                <input type="password" id="confirm_password" minlength="8"/>
+                <input type="password" id="confirm_password" name="confirm_pass" minlength="8"/>
               </div>
             </fieldset>
           </div>
           <button type="submit" class="submit-btn">Create Account</button>
+          <p>Already have an account? <a href="#" class="link">Log in</a>
+          </p>
+
         </form>
       </div>
     </div>

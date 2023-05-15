@@ -142,3 +142,10 @@ body {
 .submit-btn:active {
   transform: scale(0.99);
 }
+form >p{
+  margin-left: 5rem;
+}
+form >p .link{
+  color: var(--color);
+  text-decoration: none;
+}
